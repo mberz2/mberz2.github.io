@@ -1,10 +1,9 @@
 html {
 	--color-primary: #58e953;
 	--color-text: #fff;
-	--color-heading: var(--color-text);
 	--color-paragraph: #8f8f8f;
 	--color-background: #0f150f;
-	--color-contrast:#0f150e;
+	--color-contrast: #0f150e;
 	--color-medium: #364e36;
 	--color-dark: #0b4409;
 	--color-darker: #070807;
@@ -12,7 +11,7 @@ html {
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
 	color: var(--color-text);
-    line-height: 1.5;
+	line-height: 1.5;
 	background-color: var(--color-background);
 }
 
@@ -60,6 +59,58 @@ p {
 	border-color: red;
 }
 
+/* CONTAINER FOR ICONS */
+.icon-container {
+	padding: 5px;
+	border: solid;
+	border-color: lightblue;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.icon-container a {
+	padding-right: 20px;
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+.icon-container a:hover,
+.icon-container a:focus {
+	color: var(--color-oec);
+	background-color: var(--color-contrast);
+}
+
+/* CONTAINER FOR RESUME */
+.container .resume-container {
+	border: solid;
+	border-color: #0b4409;
+}
+
+.container .projects-container {
+	border: solid;
+	border-color: #8f8f8f;
+}
+
+.container .contact-container {
+	border: solid;
+	border-color: lightblue;
+}
+
+.container .resume-container .resume {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	padding: 10px;
+}
+
+.resume-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
 /* CONTAINER FOR NAVBAR */
 #navbar {
 	--navbar-height: 64px;
@@ -100,8 +151,10 @@ p {
 }
 
 .home-link:focus,
-.home-link:hover {
+.home-link:hover .navbar-link:focus,
+.navbar-link:hover {
 	color: var(--color-oec);
+	background-color: var(--color-contrast);
 }
 
 .navbar-link {
@@ -109,12 +162,6 @@ p {
 	width: 100%;
 	padding: 0.4em 0.8em;
 	border-radius: 5px;
-}
-
-.navbar-link:focus,
-.navbar-link:hover {
-	color: var(--color-oec);
-	background-color: var(--color-contrast);
 }
 
 /* BUTTON FOR MENU TOGGLE */
@@ -191,7 +238,7 @@ p {
 	overflow: hidden;
 	position: absolute;
 	background-color: var(--color-background);
-	opacity: .9;
+	opacity: 0.9;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
