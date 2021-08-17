@@ -13,7 +13,7 @@ Below you will find a rough outline of what sections I will complete, as well as
 Final Project
 
 - [x] Site Build/Deployment
-- [ ] Navigation Bar
+- [x] Navigation Bar
 - [ ] About Page
 - [ ] Previous Work/Resume Page
 - [ ] Projects Page
@@ -22,6 +22,8 @@ Final Project
 ### Updates
 
 - 8/16/2021 - Site deployed.
+
+- 8/17/2021 - Used online guide: https://www.aleksandrhovhannisyan.com/blog/responsive-navbar-without-bootstrap/ for basis of a Fixed Navbar without Bootstrap.
 
 ## Disclaimer
 
