@@ -2,18 +2,16 @@ body {
 	background-color: #f3f3f3;
 	min-height: 100vh;
 	font-family: "Roboto", sans-serif;
-	overflow:hidden;
+	overflow: hidden;
 }
 
 .hero {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items:center;
-  justify-content: center;
-  background-image: url('../img/portland.png');
-  background-size: cover;
-  opacity: 0.75;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	background-image: url("../img/portland.png");
+	background-size: cover;
+	opacity: 0.75;
 }
 
 /* Main Text Box */
@@ -26,14 +24,20 @@ body {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 20px;
-	opacity: .90;
+	opacity: 0.9;
 }
 
 .site-container p {
 	margin: 10px 0;
 }
 
+#index.site-container {
+	opacity: 0;
+}
 
+#project.site-container {
+	opacity: 0.85;
+}
 
 /* Navigation Bar */
 .navigation {
