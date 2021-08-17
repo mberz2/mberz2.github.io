@@ -4,6 +4,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Matthew Berzinskas</title>
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+				<script defer src="js/nav.js"></script>
 		<link rel="stylesheet" href="css/index.css" />
 		<link
 			rel="stylesheet"
@@ -14,11 +16,16 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+		<script
+			src="https://kit.fontawesome.com/31621f044e.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
-	<body>
+	<body id="about">
+		
 		<header id="navbar">
 			<nav class="navbar-container">
-				<a href="#home" class="home-link">
+				<a href="#about" class="home-link">
 					<div class="navbar-title">MATTHEW BERZINSKAS</div>
 				</a>
 				<button type="button" class="navbar-toggle">
@@ -46,10 +53,11 @@
 		</header>
 
 		<div class="container">
-			<p>??</p>
-			<p id="about">[About Me]</p>
+
+			<div class="about-container">
+			<p>[About Me]</p>
 			<p>
-				Hello, I'm Matthew -- I'm a Senior at Portland State University majoring
+				Hello, <span class="highlight">I'm Matthew</span> -- I'm a Senior at Portland State University majoring
 				in Computer Science. Prior to my studies at Portland State, I served in
 				the United States Army for twelve years in intelligence. This introduced
 				me to numerous fields that piqued my interest and eventually pushed me
@@ -58,15 +66,38 @@
 				front and back-end web development, software development, and a variety
 				of programming disciplines.
 			</p>
+			</div>
+
 			<div class="resume-container">
 				<p id="resume">[Resume Section]</p>
 				<div class="resume">
-					<section class="resume-item"></section>
-					<section class="resume-item"></section>
-					<section class="resume-item"></section>
-					<section class="resume-item"></section>
-					<section class="resume-item"></section>
-					<section class="resume-item"></section>
+					<section class="resume-item">
+						<div class="tooltip" id="test">
+						<i class="fas fa-laptop-code" style="font-size: 36px"></i>
+						<span class="tooltiptext">
+							<p>Areas of Emphasis:</p>
+							<p>General Studies.</p>
+							<p></p>
+
+
+						</span>
+						</div>
+					</section>
+					<section class="resume-item-desc">
+						<p>Attended Portland State University</p>
+					</section>
+					<section class="resume-item">
+						<i class="fas fa-chalkboard-teacher" style="font-size: 36px"></i>
+					</section>
+					<section class="resume-item-desc">
+						<p>Instructor at the Defense Language Institute, Foreign Language Center</p>
+					</section>
+					<section class="resume-item">
+						<i class="fas fa-globe-europe" style="font-size: 45px"></i>
+					</section>
+					<section class="resume-item-desc">
+						<p>Military service as a Russian cryptologic linguist</p>
+					</section>
 					<section class="resume-item"></section>
 					<section class="resume-item"></section>
 					<section class="resume-item"></section>
@@ -77,6 +108,19 @@
 			</div>
 			<div class="projects-container">
 				<p id="projects">[Projects Section]</p>
+				<div class="col-left">
+					<p>cybersecurity project placeholder</p>
+					<a href=""><i class="fa fa-gitlab" style="font-size: 36px"></i></a>
+				</div>
+				<div class="col-center">
+					<p>java android appointment app placeholder</p>
+
+					<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
+				</div>
+				<div class="col-right">
+					<p>MERN stack chat application placeholder</p>
+					<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
+				</div>
 			</div>
 			<div class="contact-container">
 				<p id="contact">[Contact Section]</p>
@@ -86,13 +130,10 @@
 						><i class="fa fa-linkedin-square" style="font-size: 36px"></i
 					></a>
 					<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
-					<a href=""><i class="fa fa-gitlab" style="font-size: 36px"></i></a>
 					<a href=""><i class="fa fa-facebook" style="font-size: 36px"></i></a>
 					<a href=""><i class="fa fa-instagram" style="font-size: 36px"></i></a>
 				</div>
 			</div>
 		</div>
 	</body>
-
-	<script src="js/nav.js"></script>
 </html>
