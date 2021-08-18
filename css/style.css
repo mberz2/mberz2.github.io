@@ -44,17 +44,17 @@ h1 {
 	line-height: 26.4px;
 }
 h3 {
-    position:relative;
+	position: relative;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 15.4px;
-    padding-bottom: 1em;
+	padding-bottom: 1em;
 }
 h3::before {
 	display: block;
 	content: " ";
-    margin-top:-75px;
-    height:75px;
+	margin-top: -75px;
+	height: 75px;
 	visibility: hidden;
 	pointer-events: none;
 }
@@ -62,7 +62,6 @@ p {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 20px;
-	margin-bottom: 2em;
 }
 
 .highlight {
@@ -87,11 +86,11 @@ p {
 	position: fixed;
 	height: var(--navbar-height);
 	background-color: var(--navbar-bg-color);
-    top:0;
+	top: 0;
 	left: 0;
 	right: 0;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-	z-index: 6;
+	z-index: 10;
 }
 
 /* NESTED CONTAINER */
@@ -269,7 +268,7 @@ p {
 }
 
 .container-about {
-	padding-bottom: 2em;
+	padding-bottom: 4em;
 }
 
 /* BEGIN RESUME */
@@ -282,6 +281,7 @@ p {
 	grid-template-columns: 1fr 3fr;
 	padding: 10px;
 	text-align: left;
+	border:solid;
 }
 
 .resume-item {
@@ -292,41 +292,58 @@ p {
 	justify-content: center;
 	text-align: center;
 	position: relative;
+	border:solid;
+	border-color:red;
 }
 
 .resume-item i {
+	display:block;
 	color: var(--navbar-text-color);
 	width: 100px;
+	border:solid;
+	border-color:pink;
 }
 
 .resume-item-desc {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-}
-
-.tooltip-wrap {
-	position: relative;
+		border:solid;
 }
 
 .tooltip-content {
 	display: none;
-	background-color: var(--navbar-bg-contrast);
+	border-radius: 6px;
+	background-color: var(--navbar-text-color);
+	box-shadow: 0 0 20px rgba(222, 231, 222, 0.25);
+	padding: 10px;
+	width: 200px;
+	color: var(--bg-color);
+	z-index: 1;
+	top: -6px;
+	left: 100%;
 	position: absolute;
-	left: 120px;
-	top: -100px;
-	height: 300px;
-	width: 300px;
-	border-radius: 5%;
-	opacity: 0.95;
-	z-index: 7;
+	font-size: 14px;
+	text-align: left;
+
+}
+
+.tooltip-content ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .resume-item:hover .tooltip-content {
 	display: block;
 }
-
 /* END RESUME */
+
+/* BEGIN SKILLS */
+
+
+
+/* END SKILLS */
 
 /* BEGIN PROJECT */
 .container-project {
