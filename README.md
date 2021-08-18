@@ -25,6 +25,8 @@ Final Project
 
 - 8/17/2021 - Used online guide: https://www.aleksandrhovhannisyan.com/blog/responsive-navbar-without-bootstrap/ for basis of a Fixed Navbar without Bootstrap.
 
+- 8/18/2021 - Working on style/look/feel. Going with a single page design to be able to focus more on interactive elements, clean presentation, and JavaScript. Going with a retro-coder look (monospaced fonts, simple icons, etc).
+
 ## Disclaimer
 
 💻
