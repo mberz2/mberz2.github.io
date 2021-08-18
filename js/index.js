@@ -1,5 +1,4 @@
-const navbar = document.getElementById("navbar");
-const navbarToggle = navbar.querySelector(".navbar-toggle");
+let navbar = document.getElementById("navbar");
 
 function openMobileNavbar() {
 	navbar.classList.add("opened");
@@ -11,6 +10,7 @@ function closeMobileNavbar() {
 	navbarToggle.setAttribute("aria-label", "Open navigation menu.");
 }
 
+let navbarToggle = navbar.querySelector(".navbar-toggle");
 navbarToggle.addEventListener("click", () => {
 	if (navbar.classList.contains("opened")) {
 		closeMobileNavbar();
@@ -19,13 +19,22 @@ navbarToggle.addEventListener("click", () => {
 	}
 });
 
-
 /* ALLOW USER TO CLOSE NAVIGATION MENU */
-const navbarMenu = navbar.querySelector(".navbar-menu");
-const navbarLinksContainer = navbar.querySelector(".navbar-links");
+let navbarMenu = navbar.querySelector(".navbar-menu");
+let navbarLinksContainer = navbar.querySelector(".navbar-links");
+let homeLink = navbar.querySelector(".home-link");
+
+homeLink.addEventListener("click", closeMobileNavbar);
+navbarMenu.addEventListener("click", closeMobileNavbar);
 
 navbarLinksContainer.addEventListener("click", (clickEvent) => {
 	clickEvent.stopPropagation();
 });
 
-navbarMenu.addEventListener("click", closeMobileNavbar);
+/* CLOSE NAVIGATION MENU ON LINK CLICK */
+let navbarLinks = navbar
+	.querySelector(".navbar-links")
+	.querySelectorAll(".navbar-link");
+
+navbarLinks.forEach((e) => {
+	e.addEventListener("click", closeMobileNavbar)});
