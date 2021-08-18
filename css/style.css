@@ -44,9 +44,19 @@ h1 {
 	line-height: 26.4px;
 }
 h3 {
+    position:relative;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 15.4px;
+    padding-bottom: 1em;
+}
+h3::before {
+	display: block;
+	content: " ";
+    margin-top:-75px;
+    height:75px;
+	visibility: hidden;
+	pointer-events: none;
 }
 p {
 	font-size: 14px;
@@ -55,8 +65,8 @@ p {
 	margin-bottom: 2em;
 }
 
-.highlight{
-    color:var(--navbar-text-color);
+.highlight {
+	color: var(--navbar-text-color);
 }
 
 /* END BASE STYLING */
@@ -73,23 +83,19 @@ p {
 
 /* OUTERMOST NAVBAR ELEMENT */
 #navbar {
-	/*FOR TESTING*/
-	border: solid;
-	border-color: red;
 	--navbar-height: 64px;
 	position: fixed;
 	height: var(--navbar-height);
 	background-color: var(--navbar-bg-color);
+    top:0;
 	left: 0;
 	right: 0;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    z-index: 6;
+	z-index: 6;
 }
 
 /* NESTED CONTAINER */
 .navbar-container {
-	border: solid;
-	border-color: yellow;
 	display: flex;
 	justify-content: space-between;
 	height: 100%;
@@ -285,7 +291,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-    position:relative;
+	position: relative;
 }
 
 .resume-item i {
@@ -300,24 +306,24 @@ p {
 }
 
 .tooltip-wrap {
-  position: relative;
+	position: relative;
 }
 
 .tooltip-content {
-  display: none;
-  background-color: var(--navbar-bg-contrast);
-  position: absolute;
-  left:120px;
-  top:-100px;
-  height:300px;
-  width:300px;
-  border-radius: 5%;
-  opacity: .95;
-  z-index:7;
+	display: none;
+	background-color: var(--navbar-bg-contrast);
+	position: absolute;
+	left: 120px;
+	top: -100px;
+	height: 300px;
+	width: 300px;
+	border-radius: 5%;
+	opacity: 0.95;
+	z-index: 7;
 }
 
 .resume-item:hover .tooltip-content {
-  display: block;
+	display: block;
 }
 
 /* END RESUME */
