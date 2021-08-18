@@ -297,6 +297,10 @@ p {
 	padding: 10px;
 }
 
+.resume button i:hover {
+	color: var(--text-color-contrast);
+}
+
 .resume-item {
 	padding: 5px;
 	font-size: 30px;
@@ -410,7 +414,7 @@ p {
 
 .icon-container a:hover,
 .icon-container a:focus {
-	color: var(--color-oec);
+	color: var(--text-color-contrast);
 	background-color: var(--color-contrast);
 }
 /* END CONTACT */
