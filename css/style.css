@@ -32,6 +32,8 @@ body {
 	color: var(--text-color);
 	height: 100vh;
 	line-height: 1.6;
+	margin-right: 10%;
+	margin-left: 10%;
 }
 
 a {
@@ -284,10 +286,10 @@ p {
 	text-align: left;
 }
 
-.resume button{
-	background:none;
-	border:none;
-	padding:10px;
+.resume button {
+	background: none;
+	border: none;
+	padding: 10px;
 }
 
 .resume-item {
@@ -329,25 +331,26 @@ p {
 
 /* Modal Content */
 .modal-content {
+	display:flex;
 	font-size: 12px;
-	color:var(--bg-color);
+	color: var(--bg-color);
 	background-color: var(--navbar-text-color);
 	margin: auto;
 	padding: 20px;
 	border: 1px solid #888;
-	width: 80%;
+	width: 40%;
 	text-align: left;
 }
 
-.modal-content ul{
+.modal-content ul {
 	list-style-type: none;
 }
 
 /* The Close Button */
-.close {
+.close_multi {
 	color: var(--navbar-bg-color);
 	float: right;
-	font-size: 28px;
+	font-size: 50px;
 	font-weight: bold;
 }
 
@@ -367,28 +370,24 @@ p {
 /* BEGIN PROJECT */
 .container-projects {
 	padding-bottom: 2em;
-	border:solid;
-	border-color: red;
 }
 
 .proj {
-	border:solid;
-	border-color: orange;
 	text-align: center;
-	height:400px;
+	height: max-content;
 	padding-bottom: 10px;
-	display:flex;
+	display: flex;
 	flex-direction: column;
-	justify-content:flex-start;
-	padding:20px;
+	justify-content: flex-start;
+	padding: 20px;
 }
 
 .proj a {
-	color:var(--navbar-text-color);
+	color: var(--navbar-text-color);
 }
 
-.proj a:hover{
-	color:var(--text-color-contrast);
+.proj a:hover {
+	color: var(--text-color-contrast);
 }
 
 /* END PROJECT */
