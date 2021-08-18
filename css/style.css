@@ -387,10 +387,6 @@ p {
 	padding: 20px;
 }
 
-.proj a {
-	color: var(--navbar-text-color);
-}
-
 .proj a:hover {
 	color: var(--text-color-contrast);
 }
