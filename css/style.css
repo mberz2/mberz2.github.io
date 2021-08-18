@@ -273,7 +273,7 @@ p {
 
 /* BEGIN RESUME */
 .container-resume {
-	padding-bottom: 2em;
+	padding-bottom: 3em;
 }
 
 .resume {
@@ -284,6 +284,12 @@ p {
 	border: solid;
 }
 
+.resume button{
+	background:none;
+	border:none;
+	padding:10px;
+}
+
 .resume-item {
 	padding: 5px;
 	font-size: 30px;
@@ -292,16 +298,12 @@ p {
 	justify-content: center;
 	text-align: center;
 	position: relative;
-	border: solid;
-	border-color: red;
 }
 
 .resume-item i {
 	display: block;
 	color: var(--navbar-text-color);
 	width: 100px;
-	border: solid;
-	border-color: pink;
 }
 
 .resume-item-desc {
