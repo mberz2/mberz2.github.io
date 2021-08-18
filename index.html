@@ -17,7 +17,12 @@
 			src="https://kit.fontawesome.com/31621f044e.js"
 			crossorigin="anonymous"
 		></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<script defer src="js/index.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -210,20 +215,70 @@
 				<div class="container-projects">
 					<h3 id="projects-section">[Projects Section]</h3>
 
-					<div class="col-left">
-						<p>web and cloud security project placeholder</p>
-						<p>Description, some pictures</p>
-						<a href=""><i class="fa fa-gitlab" style="font-size: 36px"></i></a>
-					</div>
-					<div class="col-center">
-						<p>java android appointment app placeholder</p>
-						<p>Description, some pictures</p>
-						<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
-					</div>
-					<div class="col-right">
-						<p>MERN stack chat application placeholder</p>
-						<p>Description, some pictures</p>
-						<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
+					<div class="bootstrap-grid container">
+						<div class="row1 row">
+							<div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class="proj">
+									<p>[web and cloud security]</p>
+									<a
+										href="https://gitlab.com/mberz2/s21websec-matthew-berzinskas"
+										><i class="fa fa-gitlab" style="font-size: 36px"></i
+									></a><BR>
+									<p>
+										This project contains a variety of notebooks and Python
+										scripts for addressing a variety of web and cloud security
+										vulnerabilities including Cross-site Scripting, Cross-Site
+										request forgery, and XXE/SQL injections. There are also five
+										notebooks offering descriptions and remediation steps. The
+										culminating project is a guided walkthrough on solving ten
+										Business-Logic vulnerabity levels hosted on
+										<a
+											class="highlight"
+											href="https://portswigger.net/web-security"
+											>portswigger.net</a
+										>
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class="proj">
+									<p>[java/android app development]</p>
+									<p>
+										<a
+											href="https://github.com/mberz2/PortlandStateJavaSummer2021/tree/main/apptbook-android"
+											><i class="fa fa-github" style="font-size: 36px"></i
+										></a>
+									</p>
+
+									<p>
+										This project contains a proof of concept/final-project
+										mobile application developed for android in the Java
+										programming language. Using the Android Studio development
+										environment, this application allows for users to create,
+										view, search, and delete appointments. The project currently
+										runs on the Android Studio emulator.
+									</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-lg-4">
+								<div class="proj">
+									<p>[full-stack development]</p>
+									<a href="https://github.com/mberz2/peer2peer"
+										><i class="fa fa-github" style="font-size: 36px"></i
+									></a><BR>
+
+									<p>
+										This project demonstrates the use of MongoDB, Express(.js),
+										React(.js), Node(.js), known as the MERN stack, along with
+										Firebase authentication, in a limited-functionality chat
+										application. The project was bootstrapped with Create React
+										App, using Redux and Redux Toolkit template. The project
+										repository inclues installation instructions for localized
+										testing and development.
+									</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="container-contact">

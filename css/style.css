@@ -282,7 +282,6 @@ p {
 	grid-template-columns: 1fr 3fr;
 	padding: 10px;
 	text-align: left;
-	border: solid;
 }
 
 .resume button{
@@ -311,7 +310,6 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	border: solid;
 }
 
 /* The Modal (background) */
@@ -367,29 +365,30 @@ p {
 /* END SKILLS */
 
 /* BEGIN PROJECT */
-.container-project {
+.container-projects {
 	padding-bottom: 2em;
+	border:solid;
+	border-color: red;
 }
 
-.col-left,
-.col-right,
-.col-center {
+.proj {
+	border:solid;
+	border-color: orange;
 	text-align: center;
-	width: 33.333%;
-	height: 300px;
+	height:400px;
 	padding-bottom: 10px;
+	display:flex;
+	flex-direction: column;
+	justify-content:flex-start;
+	padding:20px;
 }
 
-.col-left {
-	float: left;
+.proj a {
+	color:var(--navbar-text-color);
 }
 
-.col-right {
-	float: right;
-}
-
-.col-center {
-	display: inline-block;
+.proj a:hover{
+	color:var(--text-color-contrast);
 }
 
 /* END PROJECT */
