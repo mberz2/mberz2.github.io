@@ -4,9 +4,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Matthew Berzinskas</title>
-		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-				<script defer src="js/nav.js"></script>
-		<link rel="stylesheet" href="css/index.css" />
 		<link
 			rel="stylesheet"
 			type="text/css"
@@ -20,15 +17,20 @@
 			src="https://kit.fontawesome.com/31621f044e.js"
 			crossorigin="anonymous"
 		></script>
+		<link rel="stylesheet" href="css/style.css" />
+		<script defer src="js/index.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	</head>
-	<body id="about">
-		
+	<body id="home">
+		<!-- BEGIN NAVBAR SECTION -->
 		<header id="navbar">
-			<nav class="navbar-container">
-				<a href="#about" class="home-link">
-					<div class="navbar-title">MATTHEW BERZINSKAS</div>
-				</a>
-				<button type="button" class="navbar-toggle">
+			<nav class="navbar-container container">
+				<a href="#home" class="home-link"> MATTHEW BERZINSKAS </a>
+				<button
+					type="button"
+					class="navbar-toggle"
+					aria-label="Open navigation menu"
+				>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -36,7 +38,7 @@
 				<div class="navbar-menu">
 					<ul class="navbar-links">
 						<li class="navbar-item">
-							<a class="navbar-link" href="#about">About</a>
+							<a class="navbar-link" href="#home">About</a>
 						</li>
 						<li class="navbar-item">
 							<a class="navbar-link" href="#resume">Resume</a>
@@ -51,89 +53,91 @@
 				</div>
 			</nav>
 		</header>
+		<!-- END NAVBAR SECTION -->
 
-		<div class="container">
+		<main>
+			<div class="content">
+				<div class="container-about">
+					<p>[About Me]</p>
+					<p>
+						Hello, <span class="highlight">I'm Matthew</span> -- I'm a Senior at
+						Portland State University majoring in Computer Science. Prior to my
+						studies at Portland State, I served in the United States Army for
+						twelve years in intelligence. This introduced me to numerous fields
+						that piqued my interest and eventually pushed me to this field of
+						study. I am primarily interested in cybersecurity, but over the past
+						few years have dabbled in a variety of fields including: front and
+						back-end web development, software development, and a variety of
+						programming disciplines.
+					</p>
+				</div>
 
-			<div class="about-container">
-			<p>[About Me]</p>
-			<p>
-				Hello, <span class="highlight">I'm Matthew</span> -- I'm a Senior at Portland State University majoring
-				in Computer Science. Prior to my studies at Portland State, I served in
-				the United States Army for twelve years in intelligence. This introduced
-				me to numerous fields that piqued my interest and eventually pushed me
-				to this field of study. I am primarily interested in cybersecurity, but
-				over the past few years have dabbled in a variety of fields including:
-				front and back-end web development, software development, and a variety
-				of programming disciplines.
-			</p>
-			</div>
+				<div class="container-resume">
+					<p id="resume">[Resume Section]</p>
+					<div class="resume">
+						<section class="resume-item">
+							<i class="fas fa-laptop-code" style="font-size: 36px"></i>
+						</section>
+						<section class="resume-item-desc">
+							<p>Attended Portland State University</p>
+						</section>
+						<section class="resume-item">
+							<i class="fas fa-chalkboard-teacher" style="font-size: 36px"></i>
+						</section>
+						<section class="resume-item-desc">
+							<p>
+								Instructor at the Defense Language Institute, Foreign Language
+								Center
+							</p>
+						</section>
+						<section class="resume-item">
+							<i class="fas fa-globe-europe" style="font-size: 45px"></i>
+						</section>
+						<section class="resume-item-desc">
+							<p>Military service as a Russian cryptologic linguist</p>
+						</section>
+						<section class="resume-item"></section>
+						<section class="resume-item"></section>
+						<section class="resume-item"></section>
+						<section class="resume-item"></section>
+						<section class="resume-item"></section>
+						<section class="resume-item"></section>
+					</div>
+				</div>
 
-			<div class="resume-container">
-				<p id="resume">[Resume Section]</p>
-				<div class="resume">
-					<section class="resume-item">
-						<div class="tooltip" id="test">
-						<i class="fas fa-laptop-code" style="font-size: 36px"></i>
-						<span class="tooltiptext">
-							<p>Areas of Emphasis:</p>
-							<p>General Studies.</p>
-							<p></p>
+				<div class="container-projects">
+					<p id="projects">[Projects Section]</p>
+					<div class="col-left">
+						<p>cybersecurity project placeholder</p>
+						<a href=""><i class="fa fa-gitlab" style="font-size: 36px"></i></a>
+					</div>
+					<div class="col-center">
+						<p>java android appointment app placeholder</p>
 
-
-						</span>
-						</div>
-					</section>
-					<section class="resume-item-desc">
-						<p>Attended Portland State University</p>
-					</section>
-					<section class="resume-item">
-						<i class="fas fa-chalkboard-teacher" style="font-size: 36px"></i>
-					</section>
-					<section class="resume-item-desc">
-						<p>Instructor at the Defense Language Institute, Foreign Language Center</p>
-					</section>
-					<section class="resume-item">
-						<i class="fas fa-globe-europe" style="font-size: 45px"></i>
-					</section>
-					<section class="resume-item-desc">
-						<p>Military service as a Russian cryptologic linguist</p>
-					</section>
-					<section class="resume-item"></section>
-					<section class="resume-item"></section>
-					<section class="resume-item"></section>
-					<section class="resume-item"></section>
-					<section class="resume-item"></section>
-					<section class="resume-item"></section>
+						<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
+					</div>
+					<div class="col-right">
+						<p>MERN stack chat application placeholder</p>
+						<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
+					</div>
+				</div>
+				<div class="container-contact">
+					<p id="contact">[Contact Section]</p>
+					<p>Feel free to say hello!</p>
+					<div class="icon-container">
+						<a href=""
+							><i class="fa fa-linkedin-square" style="font-size: 36px"></i
+						></a>
+						<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
+						<a href=""
+							><i class="fa fa-facebook" style="font-size: 36px"></i
+						></a>
+						<a href=""
+							><i class="fa fa-instagram" style="font-size: 36px"></i
+						></a>
+					</div>
 				</div>
 			</div>
-			<div class="projects-container">
-				<p id="projects">[Projects Section]</p>
-				<div class="col-left">
-					<p>cybersecurity project placeholder</p>
-					<a href=""><i class="fa fa-gitlab" style="font-size: 36px"></i></a>
-				</div>
-				<div class="col-center">
-					<p>java android appointment app placeholder</p>
-
-					<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
-				</div>
-				<div class="col-right">
-					<p>MERN stack chat application placeholder</p>
-					<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
-				</div>
-			</div>
-			<div class="contact-container">
-				<p id="contact">[Contact Section]</p>
-				<p>Feel free to say hello!</p>
-				<div class="icon-container">
-					<a href=""
-						><i class="fa fa-linkedin-square" style="font-size: 36px"></i
-					></a>
-					<a href=""><i class="fa fa-github" style="font-size: 36px"></i></a>
-					<a href=""><i class="fa fa-facebook" style="font-size: 36px"></i></a>
-					<a href=""><i class="fa fa-instagram" style="font-size: 36px"></i></a>
-				</div>
-			</div>
-		</div>
+		</main>
 	</body>
 </html>
