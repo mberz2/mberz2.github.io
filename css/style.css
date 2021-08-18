@@ -281,7 +281,7 @@ p {
 	grid-template-columns: 1fr 3fr;
 	padding: 10px;
 	text-align: left;
-	border:solid;
+	border: solid;
 }
 
 .resume-item {
@@ -292,56 +292,74 @@ p {
 	justify-content: center;
 	text-align: center;
 	position: relative;
-	border:solid;
-	border-color:red;
+	border: solid;
+	border-color: red;
 }
 
 .resume-item i {
-	display:block;
+	display: block;
 	color: var(--navbar-text-color);
 	width: 100px;
-	border:solid;
-	border-color:pink;
+	border: solid;
+	border-color: pink;
 }
 
 .resume-item-desc {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-		border:solid;
+	border: solid;
 }
 
-.tooltip-content {
-	display: none;
-	border-radius: 6px;
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 50%; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	font-size: 12px;
+	color:var(--bg-color);
 	background-color: var(--navbar-text-color);
-	box-shadow: 0 0 20px rgba(222, 231, 222, 0.25);
-	padding: 10px;
-	width: 200px;
-	color: var(--bg-color);
-	z-index: 1;
-	top: -6px;
-	left: 100%;
-	position: absolute;
-	font-size: 14px;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
 	text-align: left;
-
 }
 
-.tooltip-content ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.modal-content ul{
+	list-style-type: none;
 }
 
-.resume-item:hover .tooltip-content {
-	display: block;
+/* The Close Button */
+.close {
+	color: var(--navbar-bg-color);
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 /* END RESUME */
 
 /* BEGIN SKILLS */
-
-
 
 /* END SKILLS */
 
