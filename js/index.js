@@ -77,23 +77,6 @@ window.onclick = function (event) {
 };
 
 /* ANIMATE SKILLS */
-// $(document).ready(function () {
-// 	$(document).scroll(function () {
-// 		var v2 = Math.abs($(".html").position().top - $(window).height() / 2);
-// 		var v1 = $(this).scrollTop();
-// 		if (v1 > v2) {
-// 			$(".c").animate({ width: "45%" }, 1500);
-// 			$(".c2").animate({ width: "70%" }, 1500);
-// 			$(".java").animate({ width: "80%" }, 1500);
-// 			$(".python").animate({ width: "75%" }, 1500);
-// 			$(".css").animate({ width: "50%" }, 1500);
-// 			$(".js").animate({ width: "55%" }, 1500);
-// 			$(".jquery").animate({ width: "25%" }, 1500);
-// 			$(".html").animate({ width: "70%" }, 1500);
-// 		}
-// 	});
-// });
-
 $(document).ready(function () {
 	$("#skills-section").click(function () {
 		if ($(".skills").css("display") == "block") {
@@ -106,7 +89,7 @@ $(document).ready(function () {
 	});
 });
 
-function animate(){
+function animate() {
 	$(".c").animate({ width: "45%" }, 1500);
 	$(".c2").animate({ width: "70%" }, 1500);
 	$(".java").animate({ width: "80%" }, 1500);
