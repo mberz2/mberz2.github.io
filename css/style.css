@@ -388,41 +388,51 @@ p {
 
 /* BEGIN SKILLS */
 
-.container-skills {
+.container-skills{
+	padding-bottom: 5em;
+}
+
+#skills-section {
+	padding-bottom:5em;
+}
+
+.skills {
+	border:solid;
 	padding-bottom: 2em;
-	
+	display: none;
+	overflow: hidden;
 }
-
-.container-skills .row {
-	padding-bottom: .5em;
-}
-
 
 .skill-container {
-	background-color:var(--navbar-text-color-focus);
+	background-color: var(--navbar-text-color-focus);
 	width: 100%;
 	border-radius: 5px;
-	height:25px;
-	width:95%;
+	height: 25px;
+	width: 95%;
 }
 
 .skill {
-	background-color:var(--text-color-contrast);
+	background-color: var(--text-color-contrast);
 	text-align: right;
 	color: var(--bg-color-contrast);
 	padding: 1%;
 	font-size: 20px;
 	vertical-align: middle;
 	border-radius: 5px;
-	padding-bottom:1em;
-	height:25px;
-	width:95%;
+	padding-bottom: 1em;
+	height: 25px;
+	width: 95%;
 	font-size: 14px;
 }
 
-.skill.prof{
-	width:0%;
+.skill.prof {
+	width: 0%;
 }
+
+.container-skills .row {
+	padding-bottom: 0.5em;
+}
+
 
 /* END SKILLS */
 
