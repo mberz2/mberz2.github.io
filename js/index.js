@@ -74,3 +74,15 @@ window.onclick = function (event) {
 		modalparent[event.target.getAttribute("data-index")].style.display = "none";
 	}
 };
+
+/* ANIMATE SKILLS */
+$(document).ready(function () {
+	$(".c").animate({ width: "45%" }, 1500);
+	$(".c2").animate({ width: "70%" }, 1500);
+	$(".java").animate({ width: "80%" }, 1500);
+	$(".python").animate({ width: "75%" }, 1500);
+	$(".css").animate({ width: "50%" }, 1500);
+	$(".js").animate({ width: "55%" }, 1500);
+	$(".jquery").animate({ width: "25%" }, 1500);
+	$(".html").animate({ width: "70%" }, 1500);
+});
