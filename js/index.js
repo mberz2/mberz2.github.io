@@ -20,6 +20,13 @@ navbarToggle.addEventListener("click", () => {
 	}
 });
 
+/* CLOSE WINDOW ON RESIZE */
+window.addEventListener("resize", function(){
+		if (navbar.classList.contains("opened")) {
+			closeMobileNavbar();
+		}
+});
+
 /* ALLOW USER TO CLOSE NAVIGATION MENU */
 let navbarMenu = navbar.querySelector(".navbar-menu");
 let navbarLinksContainer = navbar.querySelector(".navbar-links");

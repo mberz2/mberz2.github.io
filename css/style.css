@@ -1,10 +1,12 @@
 /* CSS RESET AND BASE STYLING */
 :root {
+	--color-main: #1c7b2d;
 	--bg-color: #0f150f;
 	--bg-color-contrast: #0b0f0b;
 	--text-color: #fff;
 	--text-color-focus: #f2f2f2;
 	--text-color-contrast: #ffd11a;
+	--color-accent: #aa9a59;
 	--navbar-bg-color: #0f150f;
 	--navbar-bg-contrast: #0b0f0b;
 	--navbar-text-color: #58e953;
@@ -93,11 +95,11 @@ p {
 	--navbar-height: 64px;
 	position: fixed;
 	height: var(--navbar-height);
-	background-color: var(--navbar-bg-color);
 	top: 0;
 	left: 0;
 	right: 0;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+	background: rgba(15, 21, 15, 0.5);
 	z-index: 10;
 }
 
@@ -107,12 +109,20 @@ p {
 	justify-content: space-between;
 	height: 100%;
 	align-items: center;
+	border-bottom:solid;
+	border-width: .5px;
+	border-color: var(--color-accent);
 }
 
 /* NAVBAR ANCHORS */
 .navbar-item {
 	margin: 0.4em;
 	width: 100%;
+}
+
+.home-link {
+	font-family: Roboto;
+	font-size: larger;
 }
 
 .home-link,
@@ -152,20 +162,28 @@ p {
 	width: 40px;
 	height: 40px;
 	display: flex;
-	align-items: center;
+	align-items: right;
 	justify-content: center;
 	flex-direction: column;
 }
 
 /* TOGGLE BAR (3x) STYLING */
 .icon-bar {
-	display: block;
-	width: 25px;
-	height: 4px;
+	display: inline-block;
+	width: 30px;
+	height: 2px;
 	margin: 2px;
 	transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out,
 		opacity 0.2s ease-in-out;
-	background-color: var(--navbar-text-color);
+	background-color: #1c7b2d;
+}
+
+.icon-bar:nth-child(2) {
+	width: 25px;
+}
+
+.icon-bar:nth-child(3) {
+	width: 20px;
 }
 
 .navbar-toggle:focus .icon-bar,
@@ -228,6 +246,7 @@ p {
 	margin: 1.4rem;
 	border-radius: 5px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	background: rgba(15, 21, 15, 0.85);
 }
 
 #navbar.opened .navbar-links {
@@ -388,12 +407,12 @@ p {
 
 /* BEGIN SKILLS */
 
-.container-skills{
+.container-skills {
 	padding-bottom: 3.5em;
 }
 
 .skills {
-	border:solid;
+	border: solid;
 	padding-bottom: 2em;
 	display: none;
 	overflow: hidden;
@@ -425,7 +444,6 @@ p {
 .container-skills .row {
 	padding-bottom: 0.5em;
 }
-
 
 /* END SKILLS */
 
