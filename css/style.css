@@ -1,16 +1,14 @@
 /* CSS RESET AND BASE STYLING */
 :root {
 	--color-main: #1c7b2d;
-	--bg-color: #0f150f;
+	--bg-color: #1f1f1f;
 	--bg-color-contrast: #0b0f0b;
 	--text-color: #fff;
+	--text-color-green: #58e953;
 	--text-color-focus: #f2f2f2;
 	--text-color-contrast: #ffd11a;
 	--color-accent: #aa9a59;
-	--navbar-bg-color: #0f150f;
-	--navbar-bg-contrast: #0b0f0b;
-	--navbar-text-color: #58e953;
-	--navbar-text-color-focus: #a7f3a5;
+	--text-color-focus: #a7f3a5;
 }
 
 * {
@@ -45,7 +43,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--navbar-text-color);
+	color: var(--text-color-green);
 }
 
 h1 {
@@ -75,7 +73,7 @@ p {
 }
 
 .highlight {
-	color: var(--navbar-text-color);
+	color: var(--text-color-green);
 }
 
 /* END BASE STYLING */
@@ -109,8 +107,8 @@ p {
 	justify-content: space-between;
 	height: 100%;
 	align-items: center;
-	border-bottom:solid;
-	border-width: .5px;
+	border-bottom: solid;
+	border-width: 0.5px;
 	border-color: var(--color-accent);
 }
 
@@ -127,7 +125,7 @@ p {
 
 .home-link,
 .navbar-link {
-	color: var(--navbar-text-color);
+	color: var(--text-color-green);
 	transition: color 0.2s ease-in-out;
 	text-decoration: none;
 	display: flex;
@@ -138,7 +136,7 @@ p {
 
 .home-link:focus,
 .home-link:hover {
-	color: var(--navbar-text-color-focus);
+	color: var(--text-color-focus);
 }
 
 .navbar-link {
@@ -150,8 +148,7 @@ p {
 
 .navbar-link:focus,
 .navbar-link:hover {
-	color: var(--navbar-text-color-focus);
-	background-color: var(--navbar-bg-contrast);
+	color: var(--text-color-focus);
 }
 
 /* TOGGLE/HAMBURGER BUTTON STYLING */
@@ -188,7 +185,6 @@ p {
 
 .navbar-toggle:focus .icon-bar,
 .navbar-toggle:hover .icon-bar {
-	background-color: var(--navbar-text-color-focus);
 }
 
 /* TRANSFORM TOGGLE BUTTON INTO AN X */
@@ -237,7 +233,6 @@ p {
 	max-height: 0;
 	overflow: hidden;
 	position: absolute;
-	background-color: var(--navbar-bg-color);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -245,13 +240,13 @@ p {
 	right: 0;
 	margin: 1.4rem;
 	border-radius: 5px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-	background: rgba(15, 21, 15, 0.85);
 }
 
 #navbar.opened .navbar-links {
 	padding: 1em;
 	max-height: none;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	background: rgba(15, 21, 15, 0.85);
 }
 /* END MOBILE LAYOUT */
 
@@ -294,13 +289,19 @@ p {
 	padding-top: 5em;
 }
 
+/* BEGIN ABOUT */
 .container-about {
-	padding-bottom: 4em;
+	border-bottom: solid;
+	border-width: 0.5px;
+	border-color: var(--color-accent);
 }
 
 /* BEGIN RESUME */
 .container-resume {
-	padding-bottom: 3em;
+	padding-top: 3em;
+	border-bottom: solid;
+	border-width: 0.5px;
+	border-color: var(--color-accent);
 }
 
 .resume {
@@ -332,7 +333,7 @@ p {
 
 .resume-item i {
 	display: block;
-	color: var(--navbar-text-color);
+	color: var(--text-color-green);
 	width: 100px;
 }
 
@@ -361,7 +362,7 @@ p {
 	display: flex;
 	font-size: 12px;
 	color: var(--bg-color);
-	background-color: var(--navbar-text-color);
+	background-color: var(--text-color0-green);
 	margin: auto;
 	padding: 20px;
 	border: 1px solid #888;
@@ -376,7 +377,7 @@ p {
 		display: flex;
 		font-size: 12px;
 		color: var(--bg-color);
-		background-color: var(--navbar-text-color);
+		background-color: var(--text-color-green);
 		margin: auto;
 		padding: 20px;
 		border: 1px solid #888;
@@ -390,7 +391,6 @@ p {
 }
 
 .close_multi {
-	color: var(--navbar-bg-color);
 	float: right;
 	font-size: 50px;
 	font-weight: bold;
@@ -406,20 +406,24 @@ p {
 /* END RESUME */
 
 /* BEGIN SKILLS */
-
 .container-skills {
-	padding-bottom: 3.5em;
+	padding-top: 3em;
+	border-bottom: solid;
+	border-width: 0.5px;
+	border-color: var(--color-accent);
 }
 
 .skills {
-	border: solid;
 	padding-bottom: 2em;
 	display: none;
 	overflow: hidden;
+	border-bottom: solid;
+	border-width: 0.5px;
+	border-color: var(--color-accent);
 }
 
 .skill-container {
-	background-color: var(--navbar-text-color-focus);
+	background-color: var(--text-color-focus);
 	width: 100%;
 	border-radius: 5px;
 	height: 25px;
@@ -449,7 +453,10 @@ p {
 
 /* BEGIN PROJECT */
 .container-projects {
-	padding-bottom: 2em;
+	padding-top: 3em;
+	border-bottom: solid;
+	border-width: 0.5px;
+	border-color: var(--color-accent);
 }
 
 .proj {
@@ -460,7 +467,6 @@ p {
 	flex-direction: column;
 	justify-content: flex-start;
 	padding: 20px;
-	border: solid;
 }
 
 @media screen and (min-width: 1000px) {
@@ -472,11 +478,15 @@ p {
 .proj a:hover {
 	color: var(--text-color-contrast);
 }
-
 /* END PROJECT */
 
+/* BEGIN CONTACT */
 .container-contact {
+	padding-top: 3em;
 	padding-bottom: 1em;
+	border-bottom: solid;
+	border-width: 0.5px;
+	border-color: var(--color-accent);
 }
 
 .icon-container {
