@@ -347,7 +347,8 @@ p {
 	padding: 10px;
 }
 
-.resume button i:hover {
+.resume button i:hover,
+.resume button i:focus {
 	color: var(--text-color-contrast);
 	transition: all 0.5s;
 }
@@ -502,7 +503,8 @@ p {
 	}
 }
 
-.proj a:hover {
+.proj a:hover,
+.proj a:focus {
 	color: var(--text-color-contrast);
 	transition: all 0.5s;
 }
@@ -540,7 +542,8 @@ p {
 	background-color: var(--color-main);
 }
 
-.container-contact .btn:hover {
+.container-contact .btn:hover,
+.container-contact .btn:focus {
 	border-color: var(--color-accent);
 	background-color: var(--bg-color-contrast);
 	transition: all 0.5s;

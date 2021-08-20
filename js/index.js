@@ -117,3 +117,17 @@ function reset() {
 	$(".jquery").animate({ width: "0" }, 1);
 	$(".html").animate({ width: "0%" }, 1);
 }
+
+	/* EMAIL FORM */
+$(document).ready(function () {
+
+	$("#send").on("click", function (e) {
+		console.log("MESSAGE SENT??");
+		console.log($("subject"));
+		e.preventDefault();
+		subject = $("#subject").val();
+		body = $("#message").val();
+		window.location =
+			"mailto:mberz2@pdx.edu?subject=" + subject + "&body=" + body;
+	});
+});
