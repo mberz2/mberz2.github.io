@@ -31,6 +31,8 @@ Final Project
 
 - 8/19/2021 - Added collapsable skill section that animates with "levels" of proficiency in various coding disciplines. Updated the look and feel, added some color and sectioning.
 
+- 8/19/2021 (2) - Added contact form functionality. It is barebones and simply calls to mail:to instead of using PHP which is not supported by Github static pages.
+
 ## Disclaimer
 
 💻
