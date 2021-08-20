@@ -163,6 +163,7 @@ p {
 .home-link:focus,
 .home-link:hover {
 	color: var(--text-color-focus);
+	transition: all 0.5s;
 }
 
 .navbar-link {
@@ -175,6 +176,7 @@ p {
 .navbar-link:focus,
 .navbar-link:hover {
 	color: var(--text-color-focus);
+	transition: all 0.5s;
 }
 
 /* TOGGLE/HAMBURGER BUTTON STYLING */
@@ -211,6 +213,7 @@ p {
 
 .navbar-toggle:focus .icon-bar,
 .navbar-toggle:hover .icon-bar {
+	transition: all 0.5s;
 }
 
 /* TRANSFORM TOGGLE BUTTON INTO AN X */
@@ -346,6 +349,7 @@ p {
 
 .resume button i:hover {
 	color: var(--text-color-contrast);
+	transition: all 0.5s;
 }
 
 .resume-item {
@@ -424,6 +428,7 @@ p {
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
+	transition: all 0.5s;
 }
 /* END RESUME */
 
@@ -499,6 +504,7 @@ p {
 
 .proj a:hover {
 	color: var(--text-color-contrast);
+	transition: all 0.5s;
 }
 /* END PROJECT */
 
@@ -526,10 +532,17 @@ p {
 .icon-container a:focus {
 	color: var(--text-color-contrast);
 	background-color: var(--color-contrast);
+	transition: all 0.5s;
 }
 
 .container-contact .btn {
 	border-color: var(--color-accent);
 	background-color: var(--color-main);
+}
+
+.container-contact .btn:hover {
+	border-color: var(--color-accent);
+	background-color: var(--bg-color-contrast);
+	transition: all 0.5s;
 }
 /* END CONTACT */
