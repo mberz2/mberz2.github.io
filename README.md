@@ -29,6 +29,8 @@ Final Project
 
 - 8/18/2021 - Site setup mostly complete. Added first major interactive component outside the navbar, which consists of modal boxes that display information related to the resume. Going to work on code clean-up as well as introduction of more interactive elements for more style + flare.
 
+- 8/19/2021 - Added collapsable skill section that animates with "levels" of proficiency in various coding disciplines. Updated the look and feel, added some color and sectioning.
+
 ## Disclaimer
 
 💻
