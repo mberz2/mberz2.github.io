@@ -280,7 +280,7 @@ p {
 /* END MOBILE LAYOUT */
 
 /* DESKTOP MEDIA QUERY */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 750px) {
 	.navbar-toggle {
 		display: none;
 	}
