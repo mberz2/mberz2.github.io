@@ -33,7 +33,6 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	</head>
 	<body>
-		<h3 id="home"></h3>
 		<!-- BEGIN NAVBAR SECTION -->
 		<header id="navbar">
 			<nav class="navbar-container container">
@@ -69,7 +68,7 @@
 
 		<!-- BEGIN MAIN CONTENT SECTION -->
 		<main>
-			<div class="content">
+			<div id="home" class="content">
 				<!-- ABOUT ME SECTION -->
 				<div class="container-about">
 					<h3 id="about-section">[About Section]</h3>
@@ -98,7 +97,10 @@
 					<h3 id="resume-section">[Resume Section] -- click icons to expand</h3>
 					<div class="resume">
 						<section class="resume-item">
-							<button class="myBtn_multi">
+							<button
+								title="Attended Portland State Button"
+								class="myBtn_multi"
+							>
 								<i class="fas fa-laptop-code" style="font-size: 36px"></i>
 							</button>
 							<!-- Modal -->
@@ -123,7 +125,7 @@
 							<p>[2019-2022] Attended Portland State University</p>
 						</section>
 						<section class="resume-item">
-							<button class="myBtn_multi">
+							<button title="Instructor Button" class="myBtn_multi">
 								<i
 									class="fas fa-chalkboard-teacher"
 									style="font-size: 36px"
@@ -158,7 +160,7 @@
 							</p>
 						</section>
 						<section class="resume-item">
-							<button class="myBtn_multi">
+							<button title="Military Service Button" class="myBtn_multi">
 								<i class="fas fa-globe-europe" style="font-size: 40px"></i>
 							</button>
 							<!-- Modal -->
@@ -189,7 +191,7 @@
 							</p>
 						</section>
 						<section class="resume-item">
-							<button class="myBtn_multi">
+							<button title="Military Service 2 Button" class="myBtn_multi">
 								<i class="fas fa-user-secret" style="font-size: 36px"></i>
 							</button>
 							<!-- Modal -->
@@ -214,7 +216,7 @@
 							</p>
 						</section>
 						<section class="resume-item">
-							<button class="myBtn_multi">
+							<button title="Retail Button" class="myBtn_multi">
 								<i class="fas fa-money-bill" style="font-size: 36px"></i>
 							</button>
 							<!-- Modal -->
@@ -342,6 +344,8 @@
 								<div class="proj">
 									<p>[web and cloud security]</p>
 									<a
+										title="Gitlab Project Link"
+										alt="Gitlab Icon"
 										href="https://gitlab.com/mberz2/s21websec-matthew-berzinskas"
 										><i class="fa fa-gitlab" style="font-size: 36px"></i></a
 									><br />
@@ -366,6 +370,8 @@
 									<p>[java/android app development]</p>
 									<p>
 										<a
+											alt="Github Icon"
+											title="Github Project Link"
 											href="https://github.com/mberz2/PortlandStateJavaSummer2021/tree/main/apptbook-android"
 											><i class="fa fa-github" style="font-size: 36px"></i
 										></a>
@@ -384,7 +390,10 @@
 							<div class="col-xs-12 col-sm-12 col-lg-4">
 								<div class="proj">
 									<p>[full-stack development]</p>
-									<a href="https://github.com/mberz2/peer2peer"
+									<a
+										title="Github Project Link"
+										alt="Github Icon"
+										href="https://github.com/mberz2/peer2peer"
 										><i class="fa fa-github" style="font-size: 36px"></i></a
 									><br />
 
@@ -402,24 +411,40 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- CONTACT SECTION -->
 				<div class="container-contact">
 					<h3 id="contact-section">[Contact Section]</h3>
 					<p>Feel free to say hello!</p>
 					<div class="icon-container">
-						<a href="https://www.linkedin.com/in/matthew-berzinskas-751224139/"
+						<a
+							alt="LinkedIn Icon"
+							title="Link to LinkedIn Page"
+							href="https://www.linkedin.com/in/matthew-berzinskas-751224139/"
 							><i class="fa fa-linkedin-square" style="font-size: 36px"></i
 						></a>
-						<a href="https://github.com/mberz2"
+						<a
+							alt="Github Icon"
+							title="Link to Github Repo"
+							href="https://github.com/mberz2"
 							><i class="fa fa-github" style="font-size: 36px"></i
 						></a>
-						<a href="https://www.facebook.com/matthew.berzinskas/"
+						<a
+							alt="Facebook Icon"
+							title="Link to Facebook Page"
+							href="https://www.facebook.com/matthew.berzinskas/"
 							><i class="fa fa-facebook" style="font-size: 36px"></i
 						></a>
-						<a href="https://www.instagram.com/pasomateo/"
+						<a
+							alt="Instagram Icon"
+							title="Link to Instagram Page"
+							href="https://www.instagram.com/pasomateo/"
 							><i class="fa fa-instagram" style="font-size: 36px"></i
 						></a>
 					</div>
 				</div>
+				<!-- END CONTACT SECTION -->
+				
 			</div>
 		</main>
 	</body>
