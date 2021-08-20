@@ -18,9 +18,9 @@
 }
 
 html {
-	background-color: var(--bg-color);
 	-webkit-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
+	background-color: var(--bg-color);
 }
 
 /* INCONSOLATA FONT IMPORT */
@@ -28,7 +28,6 @@ body {
 	font-family: Inconsolata;
 	font-style: normal;
 	font-variant: normal;
-	background: none !important;
 	color: var(--text-color);
 	height: 100vh;
 	line-height: 1.6;
@@ -50,13 +49,26 @@ h1 {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 26.4px;
+	color:var(--text-color);
+	background:none;
 }
+
+h2 {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 26.4px;
+	color:var(--text-color-green);
+	background:none;
+}
+
 h3 {
 	position: relative;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 15.4px;
 	padding-bottom: 1em;
+	color:var(--text-color);
+	background:none;
 }
 h3::before {
 	display: block;
@@ -287,6 +299,7 @@ p {
 .content {
 	padding: 3em;
 	padding-top: 5em;
+	background-color: var(--bg-color);
 }
 
 /* BEGIN ABOUT */
