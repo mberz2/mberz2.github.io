@@ -31,6 +31,7 @@ body {
 	color: var(--text-color);
 	height: 100vh;
 	line-height: 1.6;
+	  cursor:default;
 }
 
 body::-webkit-scrollbar {

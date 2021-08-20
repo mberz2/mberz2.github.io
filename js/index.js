@@ -85,7 +85,7 @@ window.onclick = function (event) {
 
 /* ANIMATE SKILLS */
 $(document).ready(function () {
-	$("#skills-section").click(function () {
+	$(".expander").click(function () {
 		if ($(".skills").css("display") == "block") {
 			$(".skills").css("display", "none");
 			reset();
