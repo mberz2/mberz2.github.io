@@ -21,10 +21,10 @@ navbarToggle.addEventListener("click", () => {
 });
 
 /* CLOSE WINDOW ON RESIZE */
-window.addEventListener("resize", function(){
-		if (navbar.classList.contains("opened")) {
-			closeMobileNavbar();
-		}
+window.addEventListener("resize", function () {
+	if (navbar.classList.contains("opened")) {
+		closeMobileNavbar();
+	}
 });
 
 /* ALLOW USER TO CLOSE NAVIGATION MENU */
@@ -84,45 +84,51 @@ window.onclick = function (event) {
 };
 
 /* ANIMATE SKILLS */
+let TIMER = 1000;
+
 $(document).ready(function () {
+	let animating = false;
+
 	$(".expander").click(function () {
-		if ($(".skills").css("display") == "block") {
-			$(".skills").css("display", "none");
-			reset();
-		} else {
-			$(".skills").css("display", "block");
-			animate();
+		if (animating) return false;
+		else {
+			if ($(".skills").css("display") == "block") {
+				$(".skills").css("display", "none");
+				reset();
+			} else {
+				animating = true;
+				$(".skills").css("display", "block");
+				animate();
+				/* Prevents reclicking during animation */
+				setTimeout(() => {
+					animating = false;
+				}, TIMER);
+			}
 		}
 	});
 });
 
 function animate() {
-	$(".c").animate({ width: "45%" }, 1500);
-	$(".c2").animate({ width: "70%" }, 1500);
-	$(".java").animate({ width: "80%" }, 1500);
-	$(".python").animate({ width: "75%" }, 1500);
-	$(".css").animate({ width: "50%" }, 1500);
-	$(".js").animate({ width: "55%" }, 1500);
-	$(".jquery").animate({ width: "25%" }, 1500);
-	$(".html").animate({ width: "70%" }, 1500);
+	$(".c").animate({ width: "45%" }, TIMER);
+	$(".c2").animate({ width: "70%" }, TIMER);
+	$(".java").animate({ width: "80%" }, TIMER);
+	$(".python").animate({ width: "75%" }, TIMER);
+	$(".css").animate({ width: "50%" }, TIMER);
+	$(".js").animate({ width: "55%" }, TIMER);
+	$(".jquery").animate({ width: "25%" }, TIMER);
+	$(".html").animate({ width: "70%" }, TIMER);
 }
 
 function reset() {
-	$(".c").animate({ width: "0%" }, 1);
-	$(".c2").animate({ width: "0%" }, 1);
-	$(".java").animate({ width: "0%" }, 1);
-	$(".python").animate({ width: "0%" }, 1);
-	$(".css").animate({ width: "0%" }, 1);
-	$(".js").animate({ width: "0%" }, 1);
-	$(".jquery").animate({ width: "0" }, 1);
-	$(".html").animate({ width: "0%" }, 1);
+	let skills = document.querySelectorAll(".prof");
+	skills.forEach(function (e) {
+		e.style.width = "0%";
+	});
 }
 
-	/* EMAIL FORM */
+/* EMAIL FORM */
 $(document).ready(function () {
-
 	$("#send").on("click", function (e) {
-		console.log("MESSAGE SENT??");
 		console.log($("subject"));
 		e.preventDefault();
 		subject = $("#subject").val();
