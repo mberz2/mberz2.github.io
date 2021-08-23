@@ -458,9 +458,6 @@ p {
 	padding-bottom: 2em;
 	display: none;
 	overflow: hidden;
-	border-bottom: solid;
-	border-width: 0.5px;
-	border-color: var(--color-accent);
 }
 
 .skill-container {
