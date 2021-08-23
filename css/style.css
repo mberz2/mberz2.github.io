@@ -454,6 +454,10 @@ p {
 	border-color: var(--color-accent);
 }
 
+.expander:hover, .expander.about-section:hover{
+	cursor: pointer;
+}
+
 .skills {
 	padding-bottom: 2em;
 	display: none;
