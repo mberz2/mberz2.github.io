@@ -79,21 +79,6 @@ window.onclick = function (event) {
 	}
 };
 
-/* EXPANDER FOR ABOUT SECTION */
-$(document).ready(function () {
-	$(".container-about .expander").click(function () {
-		$(".container-about  .expander").css("display", "none");
-		$(".container-about  .closer").css("display", "block");
-		$(".about-expandable").css("display", "block");
-	});
-
-	$(".container-about .closer").click(function () {
-		$(".container-about  .closer").css("display", "none");
-		$(".container-about  .expander").css("display", "block");
-		$(".about-expandable").css("display", "none");
-	});
-});
-
 /* ANIMATE SKILLS */
 let TIMER = 1000;
 
