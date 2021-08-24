@@ -6,6 +6,8 @@ Welcome!
 
 This repository/page serves a professional website and resume. Primarily this site will feature a variety of work and information related to the past few years of my studies at Portland State University majoring in Computer Science.
 
+The site is built using HTML and CSS with limited Bootstrap Framework (for grids + flexboxes). Animationes are scripted using a combinatio nof JavaScript and Jquery.
+
 Below you will find a rough outline of what sections I will complete, as well as some meaningful updates.
 
 ### To-Do/List
@@ -32,6 +34,10 @@ Final Project
 - 8/19/2021 - Added collapsable skill section that animates with "levels" of proficiency in various coding disciplines. Updated the look and feel, added some color and sectioning.
 
 - 8/19/2021 (2) - Added contact form functionality. It is barebones and simply calls to mail:to instead of using PHP which is not supported by Github static pages.
+
+- 8/23/2021 - Final clean up.
+
+- 8/24/2021 - QA/QC and deployment.
 
 ## Disclaimer
 

@@ -48,18 +48,18 @@ navbarLinks.forEach((e) => {
 	e.addEventListener("click", closeMobileNavbar);
 });
 
-/* MODALS */
+/* SCRIPTING FOR MULTIPLE MODALS */
 let modalparent = document.getElementsByClassName("modal_multi");
 let modal_btn_multi = document.getElementsByClassName("myBtn_multi");
 let span_close_multi = document.getElementsByClassName("close_multi");
 
-function setDataIndex() {
+window.onload = function () {
 	for (i = 0; i < modal_btn_multi.length; i++) {
 		modal_btn_multi[i].setAttribute("data-index", i);
 		modalparent[i].setAttribute("data-index", i);
 		span_close_multi[i].setAttribute("data-index", i);
 	}
-}
+};
 
 for (i = 0; i < modal_btn_multi.length; i++) {
 	modal_btn_multi[i].onclick = function () {
@@ -73,15 +73,26 @@ for (i = 0; i < modal_btn_multi.length; i++) {
 	};
 }
 
-window.onload = function () {
-	setDataIndex();
-};
-
 window.onclick = function (event) {
 	if (event.target === modalparent[event.target.getAttribute("data-index")]) {
 		modalparent[event.target.getAttribute("data-index")].style.display = "none";
 	}
 };
+
+/* EXPANDER FOR ABOUT SECTION */
+$(document).ready(function () {
+	$(".container-about .expander").click(function () {
+		$(".container-about  .expander").css("display", "none");
+		$(".container-about  .closer").css("display", "block");
+		$(".about-expandable").css("display", "block");
+	});
+
+	$(".container-about .closer").click(function () {
+		$(".container-about  .closer").css("display", "none");
+		$(".container-about  .expander").css("display", "block");
+		$(".about-expandable").css("display", "none");
+	});
+});
 
 /* ANIMATE SKILLS */
 let TIMER = 1000;
@@ -89,22 +100,23 @@ let TIMER = 1000;
 $(document).ready(function () {
 	let animating = false;
 
-	$(".expander").click(function () {
+	$(".container-skills .expander").click(function () {
 		if (animating) return false;
-		else {
-			if ($(".skills").css("display") == "block") {
-				$(".skills").css("display", "none");
-				reset();
-			} else {
-				animating = true;
-				$(".skills").css("display", "block");
-				animate();
-				/* Prevents reclicking during animation */
-				setTimeout(() => {
-					animating = false;
-				}, TIMER);
-			}
-		}
+
+		$(".container-skills .expander").css("display", "none");
+		$(".container-skills .closer").css("display", "block");
+		$(".container-skills .skills").css("display", "block");
+		animate();
+		setTimeout(() => {
+			animating = false;
+		}, TIMER);
+	});
+
+	$(".container-skills .closer").click(function () {
+		$(".container-skills .skills").css("display", "none");
+		$(".container-skills .expander").css("display", "block");
+		$(".container-skills .closer").css("display", "none");
+		reset();
 	});
 });
 
