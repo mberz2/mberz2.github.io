@@ -462,12 +462,19 @@ p {
 	border-bottom: solid;
 	border-width: 0.5px;
 	border-color: var(--color-accent);
+	
 }
 
 .soft-skills-container {
 	color: var(--text-color-green);
 	font-size: 14px;
+    margin: auto;
+    display: inline-block;
 	text-align: center;
+}
+
+.soft-skills-container span.label {
+    display: block;
 }
 
 #cb1,
@@ -480,7 +487,6 @@ p {
 		inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
 	padding: 9px;
 	border-radius: 3px;
-	display: inline-block;
 	position: relative;
 }
 
