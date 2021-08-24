@@ -470,7 +470,7 @@ p {
 }
 
 .soft-skills-container {
-	color:var(--text-color-green);
+	color: var(--text-color-green);
 	font-size: 14px;
 	text-align: center;
 }
@@ -493,7 +493,6 @@ p {
 .cb:checked:active {
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
 		inset 0px 1px 3px rgba(0, 0, 0, 0.1);
-		
 }
 
 .cb:checked {
@@ -502,7 +501,6 @@ p {
 		inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05),
 		inset 15px 10px -12px rgba(255, 255, 255, 0.1);
 	background-color: var(--text-color-contrast);
-
 }
 
 .cb:checked:after {
