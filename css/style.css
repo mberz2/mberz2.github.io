@@ -563,6 +563,10 @@ p {
 	border-color: var(--color-accent);
 }
 
+.container-projects #title {
+	color:var(--text-color-green);
+}
+
 .proj {
 	text-align: center;
 	height: max-content;
