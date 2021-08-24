@@ -568,13 +568,15 @@ p {
 }
 
 .proj {
-	text-align: center;
-	height: max-content;
-	padding-bottom: 10px;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	text-align: center;
+	height: max-content;
 	padding: 20px;
+}
+
+.proj a {
+	padding-bottom: 10px;
 }
 
 @media screen and (min-width: 1000px) {
