@@ -25,7 +25,7 @@ html {
 
 /* INCONSOLATA FONT IMPORT */
 body {
-	font-family: Inconsolata;
+	font-family: Inconsolata, Roboto, Verdana, Geneva, Tahoma, sans-serif;
 	font-style: normal;
 	font-variant: normal;
 	color: var(--text-color);
@@ -73,7 +73,6 @@ h1 {
 	font-weight: 700;
 	line-height: 26.4px;
 	color: var(--text-color-green);
-	background: none;
 }
 
 h2 {
