@@ -121,6 +121,14 @@ $(document).ready(function () {
 });
 
 function animate() {
+	$(".cb").each(function (i) {
+		var myDelay = 300;
+		var myElement = $(this);
+		setTimeout(function () {
+			myElement.prop("checked", true);
+		}, ++i * myDelay);
+	});
+
 	$(".c").animate({ width: "45%" }, TIMER);
 	$(".c2").animate({ width: "70%" }, TIMER);
 	$(".java").animate({ width: "80%" }, TIMER);
@@ -135,6 +143,10 @@ function reset() {
 	let skills = document.querySelectorAll(".prof");
 	skills.forEach(function (e) {
 		e.style.width = "0%";
+	});
+
+	$(".cb").each(function (i) {
+		$(this).prop("checked", false);
 	});
 }
 

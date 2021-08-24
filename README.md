@@ -35,9 +35,9 @@ Final Project
 
 - 8/19/2021 (2) - Added contact form functionality. It is barebones and simply calls to mail:to instead of using PHP which is not supported by Github static pages.
 
-- 8/23/2021 - Final clean up.
+- 8/23/2021 - Code clean up, fixes, site improvements.
 
-- 8/24/2021 - QA/QC and deployment.
+- 8/24/2021 - Updates to Modal for better responsive display. QA/QC and deployment.
 
 ## Disclaimer
 
