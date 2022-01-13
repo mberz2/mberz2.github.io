@@ -1,0 +1,6 @@
+{
+    "Event": "AggregationEvent",
+    "Action": "ADD",
+    "Bizstep": "Packing",
+    "Disposition": "In Progress"
+  }
