@@ -2,5 +2,7 @@
     "Event": "AggregationEvent",
     "Action": "ADD",
     "Bizstep": "Packing",
-    "Disposition": "In Progress"
+    "Disposition": "In Progress",
+    "Readpoint": "0614141.07346.1234",
+    "BizLocation": "0614141.00888.0"
   }
