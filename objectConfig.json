@@ -1,0 +1,7 @@
+{
+    "Event": "ObjectEvent",
+    "Action": "OBSERVE",
+    "Bizstep": "shipping",
+    "Disposition": "in_transit",
+    "Readpoint": "0614141.07346.1234"
+  }
