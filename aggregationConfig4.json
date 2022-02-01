@@ -1,0 +1,8 @@
+{
+    "Event": "AggregationEvent",
+    "Action": "DELETE",
+    "Bizstep": "Unpacking",
+    "Disposition": "in_progress",
+    "Readpoint": "0614141.07346.1234",
+    "BizLocation": "0614141.00888.0"
+  }
