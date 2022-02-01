@@ -1,7 +1,7 @@
 {
     "Event": "AggregationEvent",
-    "Action": "ADD",
-    "Bizstep": "Packing",
+    "Action": "OBSERVE",
+    "Bizstep": "Shipping",
     "Disposition": "in_progress",
     "Readpoint": "0614141.07346.1234",
     "BizLocation": "0614141.00888.0"
