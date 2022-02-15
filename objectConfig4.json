@@ -1,0 +1,8 @@
+{
+    "Event": "ObjectEvent",
+    "Action": "OBSERVE",
+    "Bizstep": "inspecting",
+    "Disposition": "active",
+    "Readpoint": "0725252.07777.9999",
+    "BizLocation": "0725252.00001.0"
+}
