@@ -1,0 +1,8 @@
+{
+    "Event": "TransactionEvent",
+    "Action": "ADD",
+    "Bizstep": "arriving",
+    "Disposition": "active",
+    "Readpoint": "0614141.07346.1234",
+    "BizLocation": "0614141.00888.0"
+  }
