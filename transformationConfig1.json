@@ -1,6 +1,6 @@
 {
     "Event": "TransformationEvent",
-    "Bizstep": "Creating",
+    "Bizstep": "assembling",
     "Disposition": "Active",
     "Readpoint": "0614141.09999.1234",
     "BizLocation": "0614141.00777.0"
